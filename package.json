@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "vitepress": "1.0.0-rc.14"
+  },
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "preview": "vitepress preview ."
+  },
+  "dependencies": {
+    "@vue/theme": "^2.2.4",
+    "markdown-it-mathjax3": "^4.3.2",
+    "unocss": "^0.56.1",
+    "vue": "^3.3.4"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  }
+}
