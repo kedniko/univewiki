@@ -24,9 +24,25 @@ Hi! We're really excited that you are interested in contributing to UniveWiki. B
 
 ## Development Setup
 
-You will need [pnpm](https://pnpm.io)
+You will need [pnpm](https://pnpm.io). To install it refer to [pnpm installation guide](https://pnpm.io/installation).
 
-After cloning the repo, run:
+```sh
+# clone the repo
+$ git clone https://github.com/kedniko/univewiki.git
+```
+
+Install Node.js v16 with pnpm (see this [guide](https://pnpm.io/cli/env#use)):
+
+```sh
+$ pnpm env use --global 18
+```
+
+```sh
+# clone the repo
+$ git clone https://github.com/kedniko/univewiki.git
+```
+
+After cloning the repo, `cd` into the repo and run:
 
 ```sh
 # install the dependencies of the project
@@ -45,5 +61,5 @@ After executing the above command, visit `http://localhost:5173` and try modifyi
 
 
 ::: tip Technologies
-This website is built with [UniveWiki](https://vitepress.dev/), [Vue.js 3](https://vuejs.org/) and [UnoCSS](https://unocss.dev/).
+This website is built with [Vitepress](https://vitepress.dev/), [Vue.js 3](https://vuejs.org/) and [UnoCSS](https://unocss.dev/).
 :::
