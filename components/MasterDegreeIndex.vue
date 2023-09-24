@@ -92,8 +92,8 @@ const nothigFound = computed(() => !aiListOnly.value.length && !cyberListOnly.va
           <template v-for="item in cyberListOnly">
             <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
           </template>
-          <li>
-            <ul v-if="cyberSoftwareListOnly.length">
+          <li v-if="cyberSoftwareListOnly.length">
+            <ul>
               <li>In common with "Software Development and Engineering"</li>
               <template v-for="item in cyberSoftwareListOnly">
                 <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
@@ -111,8 +111,8 @@ const nothigFound = computed(() => !aiListOnly.value.length && !cyberListOnly.va
           <template v-for="item in softwareListOnly">
             <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
           </template>
-          <li>
-            <ul v-if="cyberSoftwareListOnly.length">
+          <li v-if="cyberSoftwareListOnly.length">
+            <ul>
               <li>In common with "Cybersecurity"</li>
               <template v-for="item in cyberSoftwareListOnly">
                 <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
