@@ -49,7 +49,8 @@ export default defineConfig({
     ['meta', { name: 'twitter:site', content: '@kedniko' }],
     ['meta', { name: 'twitter:url', content: ogUrl }],
     ['link', { rel: 'search', type: 'application/opensearchdescription+xml', href: '/search.xml', title: 'UnoCSS' }],
-
+    ['script', { defer: 'true', src: '/_vercel/insights/script.js' }],
+    ['script', {}, `window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`]
   ],
   lastUpdated: true,
   cleanUrls: true,
