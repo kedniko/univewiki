@@ -3,13 +3,13 @@ date: 2023-09-18 15:55
 professor: Andrea Torsello
 ---
 
-
 # FOUNDATIONS OF ARTIFICIAL INTELLIGENCE
 
 [[toc]]
 
 ## METADATA
 
+[Moodle](https://moodle.unive.it/course/view.php?id=15029)
 |               |                              |
 | ------------- | :--------------------------: |
 | **Professor** | {{ $frontmatter.professor }} |
@@ -31,4 +31,3 @@ Two ways:
 ## Materials
 
 We will strictly follow the slides.
-

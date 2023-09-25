@@ -62,6 +62,10 @@ export default defineConfig({
     logo: { src: '/logo.svg', width: 24, height: 24 },
     // https://vitepress.dev/reference/default-theme-config
     nav: nav() as any,
+    outline: {
+      level: [1, 4],
+      label: 'Outline',
+    },
 
     sidebar,
 
