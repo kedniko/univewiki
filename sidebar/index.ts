@@ -58,7 +58,6 @@ export const sidebar: ThemeConfig['sidebar'] = {
         { text: 'Software correctness, security, and reliability', link: '/master-degree/SCSR/0_intro' },
         { text: 'Software development methodologies', link: '/master-degree/SADM/0_intro' },
         { text: 'Software performance and scalability', link: '/master-degree/SPS/0_intro' },
-        { text: 'Software performance and scalability', link: '/master-degree/SPS/0_intro' },
         { text: 'Statistical inference and learning', link: '/master-degree/SIL/0_intro' },
         { text: 'System and software security', link: '/master-degree/SSS/0_intro' },
         { text: 'Time series analysis for computer science', link: '/master-degree/TSACS/0_intro' },

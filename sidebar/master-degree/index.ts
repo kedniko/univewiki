@@ -40,7 +40,9 @@ export default {
       text: 'Lectures',
       collapsed: false,
       items: [
-        { text: 'Lecture 1', link: '/master-degree/G3CV/0_intro' },
+        { text: 'Lecture 1', link: '/master-degree/G3CV/1_episode' },
+        { text: 'Lecture 2', link: '/master-degree/G3CV/2_episode' },
+        { text: 'Lecture 3', link: '/master-degree/G3CV/3_episode' },
         ,]
     },
   ],

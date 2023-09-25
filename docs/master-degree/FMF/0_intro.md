@@ -1,5 +1,3 @@
-Domande per la prossima volta.
-
 # FOUNDATIONS OF MACHINE LEARNING
 
 ## Introduction
@@ -8,15 +6,16 @@ Neural networks and and machine learning.
 
 ### What is Artificial Intelligence?
 
-> There is no universally accepted definition.
-> The ability to perform well in an intelligence test ().  
-> Operational definition: procedure to measure intelligence.
->
-> Boring, 1961
+::: tip
+There is no universally accepted definition.
+The ability to perform well in an intelligence test ().  
+Operational definition: procedure to measure intelligence.
+Boring, 1961
 
-> The turing test
-> Does the machine acts like a human?  
-> Alan Turing
+The turing test
+Does the machine acts like a human?  
+Alan Turing
+:::
 
 ChatGPT cannot pass the turing test.
 
