@@ -3,11 +3,16 @@ import Unocss from 'unocss/vite'
 import { sidebar } from '../sidebar'
 import { resolve } from 'path'
 import pkg from '../package.json'
+import dotenv from 'dotenv';
+import path from 'path';
 
 const ogUrl = 'https://univewiki.kedniko.com/'
 const ogImage = `${ogUrl}og.png#1`
 const title = 'UniveWiki'
 const description = 'Unive in your pocket'
+
+
+dotenv.config({ path: path.join(__dirname, '../.env') });
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -66,6 +71,19 @@ export default defineConfig({
     outline: {
       level: [1, 4],
       label: 'Outline',
+    },
+
+    // search: {
+    //   provider: 'local'
+    // },
+
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+      }
     },
 
     sidebar,
