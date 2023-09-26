@@ -31,10 +31,10 @@ You will need [pnpm](https://pnpm.io). To install it refer to [pnpm installation
 $ git clone https://github.com/kedniko/univewiki.git
 ```
 
-Install Node.js v16 with pnpm (see this [guide](https://pnpm.io/cli/env#use)):
+Install Node.js v18 with pnpm (see this [guide](https://pnpm.io/cli/env#use)):
 
 ```sh
-$ pnpm env use --global 18
+pnpm env use --global 18
 ```
 
 ```sh
@@ -54,11 +54,10 @@ $ pnpm install
 The easiest way to start testing out UniveWiki is to tweak the UniveWiki docs. You may run `pnpm dev` to boot up UniveWiki documentation site locally, with live reloading of the source code.
 
 ```sh
-$ pnpm dev
+pnpm dev
 ```
 
 After executing the above command, visit `http://localhost:5173` and try modifying the source code. You'll get live update.
-
 
 ::: tip Technologies
 This website is built with [Vitepress](https://vitepress.dev/), [Vue.js 3](https://vuejs.org/) and [UnoCSS](https://unocss.dev/).
