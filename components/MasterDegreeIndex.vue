@@ -42,7 +42,7 @@ const list = ref([
 ])
 
 const aiListOnly = computed(() => searchFn(list.value.filter((el) => el.tags.includes(tags.ai))))
-const cyberSoftwareListOnly = computed(() => searchFn(list.value.filter((el) => el.tags.includes(tags.cyber) && el.tags.includes(tags.software))))
+const cyberAndSoftwareListOnly = computed(() => searchFn(list.value.filter((el) => el.tags.includes(tags.cyber) && el.tags.includes(tags.software))))
 const cyberListOnly = computed(() => searchFn(list.value.filter((el) => el.tags.length === 1 && el.tags.includes(tags.cyber))))
 const softwareListOnly = computed(() => searchFn(list.value.filter((el) => el.tags.length === 1 && el.tags.includes(tags.software))))
 const otherListOnly = computed(() => searchFn(list.value.filter((el) => el.tags.length === 1 && el.tags.includes(tags.other))))
@@ -50,7 +50,7 @@ function searchFn(list) {
   return list.filter((el) => el.label.toLowerCase().includes(search.value.toLowerCase()))
 }
 
-const nothigFound = computed(() => !aiListOnly.value.length && !cyberListOnly.value.length && !softwareListOnly.value.length && !otherListOnly.value.length)
+const nothigFound = computed(() => !aiListOnly.value.length && !cyberListOnly.value.length && !softwareListOnly.value.length && !cyberAndSoftwareListOnly.value.length && !otherListOnly.value.length)
 
 </script>
 
@@ -85,17 +85,17 @@ const nothigFound = computed(() => !aiListOnly.value.length && !cyberListOnly.va
         </ul>
       </template>
 
-      <template v-if="cyberListOnly.length">
+      <template v-if="cyberListOnly.length || cyberAndSoftwareListOnly.length">
         <h3>Cybersecurity</h3>
 
         <ul>
           <template v-for="item in cyberListOnly">
             <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
           </template>
-          <li v-if="cyberSoftwareListOnly.length">
+          <li v-if="cyberAndSoftwareListOnly.length">
             <ul>
               <li>In common with "Software Development and Engineering"</li>
-              <template v-for="item in cyberSoftwareListOnly">
+              <template v-for="item in cyberAndSoftwareListOnly">
                 <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
               </template>
             </ul>
@@ -103,7 +103,7 @@ const nothigFound = computed(() => !aiListOnly.value.length && !cyberListOnly.va
         </ul>
       </template>
 
-      <template v-if="softwareListOnly.length">
+      <template v-if="softwareListOnly.length || cyberAndSoftwareListOnly.length">
 
         <h3>Software Development and Engineering</h3>
 
@@ -111,10 +111,10 @@ const nothigFound = computed(() => !aiListOnly.value.length && !cyberListOnly.va
           <template v-for="item in softwareListOnly">
             <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
           </template>
-          <li v-if="cyberSoftwareListOnly.length">
+          <li v-if="cyberAndSoftwareListOnly.length">
             <ul>
               <li>In common with "Cybersecurity"</li>
-              <template v-for="item in cyberSoftwareListOnly">
+              <template v-for="item in cyberAndSoftwareListOnly">
                 <li><a :href="item.url + '.html'">{{ item.label }}</a></li>
               </template>
             </ul>
