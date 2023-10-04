@@ -1,3 +1,5 @@
+import fai from './fai'
+
 export default {
   '/master-degree/B/': [
     {
@@ -8,17 +10,7 @@ export default {
         ,]
     },
   ],
-  '/master-degree/FAI/': [
-    {
-      text: 'Lectures',
-      collapsed: false,
-      items: [
-        { text: 'Intro', link: '/master-degree/FAI/0_intro' },
-        { text: 'Lecture 1', link: '/master-degree/FAI/1_episode' },
-        { text: 'Lecture 2', link: '/master-degree/FAI/2_episode' },
-        ,]
-    },
-  ],
+  '/master-degree/FAI/': fai,
   '/master-degree/FMF/': [
     {
       text: 'Lectures',

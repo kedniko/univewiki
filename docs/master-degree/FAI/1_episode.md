@@ -1,3 +1,4 @@
+
 ## What is artificial intelligence?
 
 No universally accepted definition. AI is the endeavor of building intelligent artifact.
@@ -19,5 +20,3 @@ Strong AI: can a machine be self-aware?
 **AI**: A program that can sense, reason, act and adapt
 **ML**: Algorithms whose performance improve with experience as they are exposed to more data over time
 **DL**: Subset of ML in which multi-layered neural networks learn from vast amounts of data
-
-### Next time ww will talk about: search

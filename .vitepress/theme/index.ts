@@ -2,9 +2,14 @@ import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 // import { watchEffect, onMounted } from 'vue'
 import 'uno.css'
+import UwImage from '../../components/UwImage.vue'
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
+  enhanceApp(ctx) {
+    // register your custom global components
+    ctx.app.component('UwImage', UwImage)
+  }
   // setup() {
   //   const { lang } = useData()
   //   onMounted(() => {

@@ -15,13 +15,11 @@ professor: Andrea Torsello
 | **Professor** | {{ $frontmatter.professor }} |
 | Rate          |              -               |
 
-No, can just read the slides
-
-No recording. He will republish the old ones.
-
 ## EXAM
 
+::: tip
 We must use Python.
+:::
 
 Two ways:
 
@@ -31,3 +29,9 @@ Two ways:
 ## Materials
 
 We will strictly follow the slides.
+
+::: tip
+
+- We can study from the slides.
+- He will republish the old recordings.
+:::

@@ -16,7 +16,8 @@ Objects:
 - actions
 - goals
 
-![Alt text](image.png)
+<UwImage src="img/image.png"/>
+
 :::tip
 I can ignore backtracking actions
 :::
@@ -32,7 +33,7 @@ The algorithm proceed level by level, hence it is
 
 - ✅ Complete
 - ✅ Optimal (will find the solution at smallest depth)
-![Alt text](image-1.png)
+<UwImage src="img/image-1.png"/>
 
 Temporal Complexity:
 Simplifying hypotheses:
@@ -40,7 +41,7 @@ Simplifying hypotheses:
 - The search tree has constant branching factor b
 - The first goal is at depth d
 
-![Alt text](image-2.png)
+<UwImage src="img/image-2.png"/>
 
 :::tip
 Observation: the number of nodes at level $d$ is $b^d$
